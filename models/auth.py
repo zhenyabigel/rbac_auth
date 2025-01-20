@@ -1,4 +1,4 @@
-from training_projects.rbac_auth.models.base import SQLModel
+from models.base import SQLModel
 from sqlalchemy.orm import Mapped, mapped_column
 
 

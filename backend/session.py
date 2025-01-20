@@ -7,10 +7,9 @@ from sqlalchemy.orm import (
     sessionmaker,
 )
 
-from training_projects.rbac_auth.backend.config import config
+from backend.config import config
 
 
-# create session factory to generate new database sessions
 SessionFactory = sessionmaker(
     bind=create_engine(config.database.dsn),
     autocommit=False,
